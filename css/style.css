@@ -1,0 +1,931 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    line-height: 0.8;
+}
+
+body {
+    overflow-x: hidden;
+}
+.toggler-area i{
+    color: #313131;
+}
+.toggler-area{
+    width: 50px;
+    text-align: center;
+}
+html,body{
+    scroll-behavior:smooth;
+}
+/* =======================================common css end==================== */
+/* =======================================navbar css start==================== */
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 17px;
+    padding-left: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #313131;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    font-weight: 600;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+}
+
+.navbar {
+	padding-top: 54px;
+	padding-bottom: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+.slidebar{
+    min-width: 100%;
+    height: 100vh;
+    background-color: #18A7B9;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    text-align: center;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.slidebar .nav-item .nav-link{
+    color: #fff;
+}
+.cross{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.cross i{
+    color: #ffff;
+}
+/* =======================================navbar css end==================== */
+/* =======================================banner css start==================== */
+.left-part h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    color: #313131;
+    margin-top: 118px;
+}
+
+.left-part p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B6B6B;
+    margin-bottom: 40px;
+    padding-right: 93px;
+}
+
+.left-part h1 span {
+    color: #18A7B9;
+}
+.right-part {
+    margin-top: -55px;
+    width: 647px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 255px;
+    -webkit-border-radius: 10px 10px 10px 255px;
+    -moz-border-radius: 10px 10px 10px 255px;
+    -ms-border-radius: 10px 10px 10px 255px;
+    -o-border-radius: 10px 10px 10px 255px;
+}
+
+.left-btn {
+    align-items: center;
+}
+
+.left-btn button {
+    width: 214px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #18A7B9;
+    color: #18A7B9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    transition: all linear 0.3s;
+    border-radius: 40px 5px 40px 5px;
+    -webkit-border-radius: 40px 5px 40px 5px;
+    -moz-border-radius: 40px 5px 40px 5px;
+    -ms-border-radius: 40px 5px 40px 5px;
+    -o-border-radius: 40px 5px 40px 5px;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-bottom: 90px;
+}
+
+.left-btn button:hover {
+    background-color: #18A7B9;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.text-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #313131;
+    margin-bottom: 12px;
+}
+
+.text-item p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6B6B6B;
+}
+
+.text-item {
+    position: relative;
+}
+
+.left-avg1 {
+    position: absolute;
+    left: -3px;
+    top: -19px;
+    z-index: -1;
+}
+
+.left-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-avg2 {
+    position: absolute;
+    left: 3px;
+    top: -17px;
+    z-index: -1;
+}
+
+.left-avg3 {
+    position: absolute;
+    left: -6px;
+    top: -17px;
+    z-index: -1;
+}
+
+/* .logo-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+    width: 1170px;
+    background-color: #FAFAFA;
+    padding: 74px 82px;
+    flex-wrap: wrap;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -ms-border-radius: 150px 150px 150px 150px;
+    -o-border-radius: 150px 150px 150px 150px;
+} */
+#brand {
+	margin-top: 125px;
+    margin-bottom: 107px;
+}
+.brand_wrepper {
+    padding-top: 73px;
+    padding-bottom: 73px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+
+.brand_item {
+    width: 244px;
+    text-align: center;
+}
+
+.vector {
+    position: absolute;
+    top: 614px;
+    left: -69px;
+    z-index: -1;
+}
+
+.left-part2 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B6B6B;
+    margin-bottom: 30px;
+}
+
+.left-btn2 button {
+    width: 214px;
+    padding: 22px 0px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #18A7B9;
+    color: #18A7B9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    border-radius: 40px 5px 40px 5px;
+    -webkit-border-radius: 40px 5px 40px 5px;
+    -moz-border-radius: 40px 5px 40px 5px;
+    -ms-border-radius: 40px 5px 40px 5px;
+    -o-border-radius: 40px 5px 40px 5px;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    /* margin-bottom: 117px; */
+}
+
+.left-btn2 button:hover {
+    background-color: #18A7B9;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.right-part2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 120%;
+    color: #313131;
+}
+.ban_top {
+	position: absolute;
+	top: 164px;
+	left: 635px;
+	width: 300px;
+	height: 213px;
+	background: #E9F5FF;
+	border-radius: 106px 5px 5px 5px;
+	-webkit-border-radius: 106px 5px 5px 5px;
+	-moz-border-radius: 106px 5px 5px 5px;
+	-ms-border-radius: 106px 5px 5px 5px;
+	-o-border-radius: 106px 5px 5px 5px;
+	z-index: -99;
+}
+.ban_bottom {
+	position: absolute;
+	bottom: -212px;
+	right: 121px;
+	width: 300px;
+	height: 213px;
+	background: #E9F5FF;
+	border-radius: 5px 5px 106px 5px;
+	-webkit-border-radius: 5px 5px 106px 5px;
+	-moz-border-radius: 5px 5px 106px 5px;
+	-ms-border-radius: 5px 5px 106px 5px;
+	-o-border-radius: 5px 5px 106px 5px;
+	z-index: -98;
+}
+/* =======================================banner css end==================== */
+/* =======================================banner2 css start==================== */
+#banner2 {
+    margin-top: 109px;
+    margin-bottom: 140px;
+}
+
+.right-text1 {
+    display: flex;
+    margin-top: 145px;
+    position: relative;
+}
+
+.rec1 {
+    position: absolute;
+    top: 23px;
+    left: 34px;
+    z-index: -1;
+}
+
+.right-text1 h2 {
+    margin-right: 22px;
+    margin-left: 68px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.right-text1 p {
+    padding-top: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6B6B6B;
+    line-height: 28px;
+}
+
+.right-text2 {
+    display: flex;
+    margin-top: 138px;
+    position: relative;
+}
+
+.rec2 {
+    position: absolute;
+    top: 23px;
+    left: 34px;
+    z-index: -1;
+}
+
+.right-text2 h2 {
+    margin-right: 22px;
+    margin-left: 68px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.right-text2 p {
+    padding-top: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6B6B6B;
+    line-height: 28px;
+}
+
+.right-text3 {
+    display: flex;
+    margin-top: 138px;
+    position: relative;
+}
+
+.rec3 {
+    position: absolute;
+    top: 23px;
+    left: 34px;
+    z-index: -1;
+}
+
+.right-text3 h2 {
+    margin-right: 22px;
+    margin-left: 68px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.right-text3 p {
+    padding-top: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6B6B6B;
+    line-height: 28px;
+}
+
+/* =======================================banner2 css end==================== */
+/* =======================================engeners css end==================== */
+.header h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    margin-bottom: 30px;
+    color: #313131;
+}
+
+.header p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 80px;
+	color: #6B6B6B;
+	width: 672px;
+	line-height: 28px;
+}
+
+.div-item {
+    background-color: #FFFFFF;
+    text-align: center !important;
+    padding: 100px 80px;
+    border: 1px solid #eaeaea;
+    margin-left: 24px;
+    margin-right: 24px;
+    position: relative;
+    filter: drop-shadow(1px 5px 7px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(1px 5px 7px rgba(0, 0, 0, 0.1));
+    margin-bottom: 80px;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+.div-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #313131;
+    margin-bottom: 7px;
+}
+
+.a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6B6B6B;
+    margin-bottom: 47px;
+}
+
+.b {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6B6B6B;
+    margin-bottom: 8px;
+}
+
+.c {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #18A7B9;
+}
+
+#enginers {
+    margin-bottom: 130px;
+}
+
+.div-img {
+    margin-bottom: 22px;
+}
+
+.div-star a i {
+    position: absolute;
+    top: 29px;
+    left: 30px;
+    color: yellow;
+    font-size: 20px;
+}
+
+.div-dots a i {
+    position: absolute;
+    top: 29px;
+    right: 30px;
+    font-size: 20px;
+    color: #313131;
+}
+.arrow-div{
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    text-align: center;
+    height: 66px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(1px 5px 7px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(1px 5px 7px rgba(0, 0, 0, 0.1));
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.left_arrow i{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #313131;
+    border-radius: 50%;
+    left: 8px;
+    top: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.left_arrow:hover i{
+    background-color: #18A7B9;
+    color: #FAFAFA;
+}
+.right_arrow:hover i{
+    background-color: #18A7B9;
+    color: #FAFAFA;
+}
+.right_arrow i{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   background-color: #FFFFFF;
+   color: #313131;
+   border-radius: 50%;
+   right: 8px;
+   top: 8px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   transition: all linear 0.3s;
+   -webkit-transition: all linear 0.3s;
+   -moz-transition: all linear 0.3s;
+   -ms-transition: all linear 0.3s;
+   -o-transition: all linear 0.3s;
+}
+/* =======================================engeners css end==================== */
+/* =======================================messengers css end==================== */
+#message {
+    padding-top: 159px;
+    padding-bottom: 280px;
+    margin-bottom: 142px;
+}
+
+.msg-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    color: #FAFAFA;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.msg-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FAFAFA;
+}
+.msg-text{
+    position: relative;
+}
+.massage_top{
+    position: absolute;
+    top: 56px;
+    left: -96px;
+}
+.massage_btn {
+	position: absolute;
+	bottom: -14px;
+	right: -76px;
+}
+/* =======================================engeners css end==================== */
+/* =======================================form css start==================== */
+.form-feild {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.main-form {
+    width: 600px;
+    border: 1px solid #eaeaea;
+    margin: 0 auto;
+}
+
+.form-feild input {
+    padding: 15px 30px;
+    width: 100%;
+    background-color: #eaeaea;
+    border: none;
+}
+.form-feild2 input {
+    padding: 15px 30px;
+    width: 100%;
+    background-color: #eaeaea;
+    border: none;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.form-feild input:focus {
+    outline: none;
+    background: none;
+    border: 1px solid #F4F4F4;
+}
+.form-feild2 input:focus {
+    outline: none;
+    background: none;
+    border: 1px solid #F4F4F4;
+}
+
+.err-msg {
+    font-size: 18px;
+    color: red;
+    margin-left: 59px;
+}
+
+.btn3 button {
+    width: 214px;
+    padding: 22px 0px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #18A7B9;
+    color: #18A7B9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    border-radius: 40px 5px 40px 5px;
+    -webkit-border-radius: 40px 5px 40px 5px;
+    -moz-border-radius: 40px 5px 40px 5px;
+    -ms-border-radius: 40px 5px 40px 5px;
+    -o-border-radius: 40px 5px 40px 5px;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.flager {
+    overflow: hidden;
+}
+
+#contact {
+    margin-bottom: 140px;
+}
+
+/* =======================================form css end==================== */
+/* =======================================blog css start==================== */
+#blog-pic {
+    padding: 200px 100px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 140px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#blog-pic img {
+    width: 496px;
+}
+
+.blog-content {
+    top: 210px;
+    left: 96px;
+    position: absolute;
+    text-align: center;
+}
+
+.blog-content h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+.blog-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.btn4 button {
+    opacity: 0;
+    width: 214px;
+    padding: 22px 0px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    border-radius: 40px 5px 40px 5px;
+    -webkit-border-radius: 40px 5px 40px 5px;
+    -moz-border-radius: 40px 5px 40px 5px;
+    -ms-border-radius: 40px 5px 40px 5px;
+    -o-border-radius: 40px 5px 40px 5px;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#blog-pic:hover .btn4 button {
+    opacity: 1;
+}
+
+/* =======================================blog css end==================== */
+/* =======================================blog css end==================== */
+.btn5 button {
+    width: 220px;
+    padding: 22px 0px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #18A7B9;
+    color: #18A7B9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    border-radius: 40px 5px 40px 5px;
+    -webkit-border-radius: 40px 5px 40px 5px;
+    -moz-border-radius: 40px 5px 40px 5px;
+    -ms-border-radius: 40px 5px 40px 5px;
+    -o-border-radius: 40px 5px 40px 5px;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-bottom: 156px;
+}
+
+.btn5 button:hover {
+    background-color: #18A7B9;
+    color: #ffff;
+}
+
+/* =======================================blog css end==================== */
+/* =======================================footer css start==================== */
+.fot-icon {
+    margin-bottom: 30px;
+}
+
+.fot1-text {
+    margin-bottom: 40px;
+}
+
+.fot1-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6B6B6B;
+    line-height: 28px;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.fab a i {
+    width: 28px;
+    height: 28px;
+    background: #18A7B9;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+}
+
+.twi a i {
+    width: 28px;
+    height: 28px;
+    background: #18A7B9;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 16px;
+}
+
+.link a i {
+    width: 28px;
+    height: 28px;
+    background: #18A7B9;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 16px;
+}
+
+.hed-rec {
+    margin-bottom: 39px;
+}
+.rec-text ul li{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6B6B6B;
+    margin-bottom: 18px;
+}
+.rec-text ul li:last-child{
+    margin-bottom: 0;
+}
+/* =======================================footer css end==================== */
+#coppy{
+    padding: 17px 0;
+}
+.coppy p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #C2C2C2;
+    text-align: center;
+}
+/* ====================================copy part end========================= */
+/* .btt{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #18A7B9;
+    color: #fff;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: none;
+} */
+.to-top {
+    background: #18A7B9;
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+    color:#ffff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
